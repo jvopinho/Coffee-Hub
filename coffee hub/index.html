@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coffee Hub - Fórum</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <img class="logo-img" src="img/logocoffe.png" width="150">
+    </div>
+
+    <form class="search-container">
+      <input type="search" placeholder="Pesquisar..." aria-label="Pesquisar">
+      <button type="submit">🔍</button>
+    </form>
+
+    <div class="header-actions">
+      <button class="user-icon">👤</button>
+      <button class="menu-icon" id="menuToggle">☰</button>
+    </div>
+  </header>
+
+  <!-- Mais Comentados -->
+  <nav class="categories">
+    <ul>
+      <li><a href="#" class="active">Java</a></li>
+      <li><a href="#">Cyber Segurança</a></li>
+      <li><a href="#">IA</a></li>
+    </ul>
+  </nav>
+
+  <!-- Lista de posts -->
+  <main>
+    <section class="posts">
+      <article class="post">
+        <h2 class="post-title">1. Título do post</h2>
+        <p class="post-info">
+          16 curtida · 10 comentários · <a href="#">autor</a> · 1 dia atrás
+        </p>
+      </article>
+
+      <article class="post">
+        <h2 class="post-title">2. Título do post</h2>
+        <p class="post-info">
+          16 curtida · 10 comentários · <a href="#">autor</a> · 1 dia atrás
+        </p>
+      </article>
+
+      <article class="post">
+        <h2 class="post-title">3. Título do post</h2>
+        <p class="post-info">
+          16 curtida · 10 comentários · <a href="#">autor</a> · 1 dia atrás
+        </p>
+      </article>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <button class="footer-btn">💬</button>
+    <button class="footer-btn">🔔</button>
+  </footer>
+
+  <script>
+    // Toggle menu mobile
+    const menuToggle = document.getElementById("menuToggle");
+    menuToggle.addEventListener("click", () => {
+      alert("Menu lateral abriria aqui!");
+    });
+  </script>
+</body>
+</html>
