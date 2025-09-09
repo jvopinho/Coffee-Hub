@@ -1,0 +1,41 @@
+/* Categorias */
+.categories {
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+  margin-top: 5px;
+}
+
+.categories ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  background: #222;
+  padding: 8px 20px;
+  border-radius: 20px;
+}
+
+.categories a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+.categories a.active {
+  color: #d2691e;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .categories ul {
+    gap: 10px;
+    padding: 6px 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .categories ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
