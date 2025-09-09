@@ -1,0 +1,155 @@
+body[data-colors-schema="light"] {
+  --colors-background: #ffffff;
+  --colors-header: #25292e;
+  --colors-overlay: #000000E6;
+
+  --colors-band-100: #e7700d;
+  --colors-band-80: #e7700dcc;
+  --colors-band-60: #e7700d99;
+  --colors-band-40: #e7700d66;
+  --colors-band-20: #e7700d33;
+  --colors-band-15: #e7700d26;
+  --colors-band-10: #e7700d1a;
+  --colors-band-5: #e7700d0d;
+
+  --colors-secondary-100: #5e17eb;
+  --colors-secondary-80: #5e17ebcc;
+  --colors-secondary-60: #5e17eb99;
+  --colors-secondary-40: #5e17eb66;
+  --colors-secondary-20: #5e17eb33;
+  --colors-secondary-15: #5e17eb26;
+  --colors-secondary-10: #5e17eb1a;
+  --colors-secondary-5: #5e17eb0d;
+
+  --colors-ui-100: #000000;
+  --colors-ui-80: #000000cc;
+  --colors-ui-60: #00000099;
+  --colors-ui-40: #00000066;
+  --colors-ui-20: #00000033;
+  --colors-ui-15: #00000026;
+  --colors-ui-10: #0000001a;
+  --colors-ui-5: #0000000d;
+
+  --colors-flow-100: #ffffff;
+  --colors-flow-80: #ffffffcc;
+  --colors-flow-60: #ffffff99;
+  --colors-flow-40: #ffffff66;
+  --colors-flow-20: #ffffff33;
+  --colors-flow-15: #ffffff26;
+  --colors-flow-10: #ffffff1a;
+  --colors-flow-5: #ffffff0d;
+
+  --colors-text-100: #000000;
+  --colors-text-80: #000000cc;
+  --colors-text-60: #00000099;
+  --colors-text-40: #00000066;
+  --colors-text-20: #00000033;
+  --colors-text-15: #00000026;
+  --colors-text-10: #0000001a;
+  --colors-text-5: #0000000d;
+
+  --colors-red-100: #d1242f;
+  --colors-red-80: #d1242fcc;
+  --colors-red-60: #d1242f99;
+  --colors-red-40: #d1242f66;
+  --colors-red-20: #d1242f33;
+  --colors-red-15: #d1242f26;
+  --colors-red-10: #d1242f1a;
+  --colors-red-5: #d1242f0d;
+
+  --colors-green-100: #1a7f37;
+  --colors-green-80: #1a7f37cc;
+  --colors-green-60: #1a7f3799;
+  --colors-green-40: #1a7f3766;
+  --colors-green-20: #1a7f3733;
+  --colors-green-15: #1a7f3726;
+  --colors-green-10: #1a7f371a;
+  --colors-green-5: #1a7f370d;
+
+  --colors-blue-100: #1e88e5;
+  --colors-blue-80: #1e88e5cc;
+  --colors-blue-60: #1e88e599;
+  --colors-blue-40: #1e88e566;
+  --colors-blue-20: #1e88e533;
+  --colors-blue-15: #1e88e526;
+  --colors-blue-10: #1e88e51a;
+  --colors-blue-5: #1e88e50d;
+}
+
+body[data-colors-schema="dark"] {
+  --colors-background: #0d1117;
+  --colors-overlay: #ffffffE6;
+  --colors-header: #25292e;
+
+  --colors-band-100: #e7700d;
+  --colors-band-80: #e7700dcc;
+  --colors-band-60: #e7700d99;
+  --colors-band-40: #e7700d66;
+  --colors-band-20: #e7700d33;
+  --colors-band-15: #e7700d26;
+  --colors-band-10: #e7700d1a;
+  --colors-band-5: #e7700d0d;
+
+  --colors-secondary-100: #5e17eb;
+  --colors-secondary-80: #5e17ebcc;
+  --colors-secondary-60: #5e17eb99;
+  --colors-secondary-40: #5e17eb66;
+  --colors-secondary-20: #5e17eb33;
+  --colors-secondary-15: #5e17eb26;
+  --colors-secondary-10: #5e17eb1a;
+  --colors-secondary-5: #5e17eb0d;
+
+  --colors-ui-100: #ffffff;
+  --colors-ui-80: #ffffffcc;
+  --colors-ui-60: #ffffff99;
+  --colors-ui-40: #ffffff66;
+  --colors-ui-20: #ffffff33;
+  --colors-ui-15: #ffffff26;
+  --colors-ui-10: #ffffff1a;
+  --colors-ui-5: #ffffff0d;
+
+  --colors-flow-100: #000000;
+  --colors-flow-80: #000000cc;
+  --colors-flow-60: #00000099;
+  --colors-flow-40: #00000066;
+  --colors-flow-20: #00000033;
+  --colors-flow-15: #00000026;
+  --colors-flow-10: #0000001a;
+  --colors-flow-5: #0000000d;
+
+  --colors-text-100: #ffffff;
+  --colors-text-80: #ffffffcc;
+  --colors-text-60: #ffffff99;
+  --colors-text-40: #ffffff66;
+  --colors-text-20: #ffffff33;
+  --colors-text-15: #ffffff26;
+  --colors-text-10: #ffffff1a;
+  --colors-text-5: #ffffff0d;
+
+  --colors-red-100: #d1242f;
+  --colors-red-80: #d1242fcc;
+  --colors-red-60: #d1242f99;
+  --colors-red-40: #d1242f66;
+  --colors-red-20: #d1242f33;
+  --colors-red-15: #d1242f26;
+  --colors-red-10: #d1242f1a;
+  --colors-red-5: #d1242f0d;
+
+  --colors-green-100: #1a7f37;
+  --colors-green-80: #1a7f37cc;
+  --colors-green-60: #1a7f3799;
+  --colors-green-40: #1a7f3766;
+  --colors-green-20: #1a7f3733;
+  --colors-green-15: #1a7f3726;
+  --colors-green-10: #1a7f371a;
+  --colors-green-5: #1a7f370d;
+
+  --colors-blue-100: #1e88e5;
+  --colors-blue-80: #1e88e5cc;
+  --colors-blue-60: #1e88e599;
+  --colors-blue-40: #1e88e566;
+  --colors-blue-20: #1e88e533;
+  --colors-blue-15: #1e88e526;
+  --colors-blue-10: #1e88e51a;
+  --colors-blue-5: #1e88e50d;
+}

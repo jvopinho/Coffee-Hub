@@ -1,6 +1,6 @@
 /* Footer */
 footer {
-  background-color: #222;
+  background-color: var(--colors-header)s;
   color: #fff;
   position: relative;
   bottom: 0;

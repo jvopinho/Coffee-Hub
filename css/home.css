@@ -2,7 +2,6 @@
 .categories {
   display: flex;
   justify-content: center;
-  background-color: #fff;
   margin-top: 5px;
 }
 
@@ -10,7 +9,7 @@
   list-style: none;
   display: flex;
   gap: 20px;
-  background: #222;
+  background: var(--colors-header);
   padding: 8px 20px;
   border-radius: 20px;
 }
@@ -22,7 +21,7 @@
 }
 
 .categories a.active {
-  color: #d2691e;
+  color: var(--colors-band-100);
 }
 
 /* Responsividade */

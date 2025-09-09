@@ -4,47 +4,13 @@
   padding: 0;
   box-sizing: border-box;
   font-family: system-ui, Arial, sans-serif;
-
-  --colors-ui-100: #000000;
-  --colors-ui-80: #000000cc;
-  --colors-ui-60: #00000099;
-  --colors-ui-40: #00000066;
-  --colors-ui-20: #00000033;
-  --colors-ui-15: #00000026;
-  --colors-ui-10: #0000001a;
-  --colors-ui-5: #0000000d;
-
-  --colors-ui-100: #000000;
-  --colors-ui-80: #000000cc;
-  --colors-ui-60: #00000099;
-  --colors-ui-40: #00000066;
-  --colors-ui-20: #00000033;
-  --colors-ui-15: #00000026;
-  --colors-ui-10: #0000001a;
-  --colors-ui-5: #0000000d;
-
-  --colors-ui-100: #000000;
-  --colors-ui-80: #000000cc;
-  --colors-ui-60: #00000099;
-  --colors-ui-40: #00000066;
-  --colors-ui-20: #00000033;
-  --colors-ui-15: #00000026;
-  --colors-ui-10: #0000001a;
-  --colors-ui-5: #0000000d;
-
-  --colors-text-100: #000000;
-  --colors-text-80: #000000cc;
-  --colors-text-60: #00000099;
-  --colors-text-40: #00000066;
-  --colors-text-20: #00000033;
-  --colors-text-15: #00000026;
-  --colors-text-10: #0000001a;
-  --colors-text-5: #0000000d;
-
-  --colors-overlay: #000000E6;
 }
 
 body {
-  background-color: #fff;
+  background-color: var(--colors-background);
   color: #222;
+}
+
+hr {
+  border-color: var(--colors-ui-20);
 }

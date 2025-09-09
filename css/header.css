@@ -1,6 +1,6 @@
 /* Header */
 header {
-  background-color: #222;
+  background-color: var(--colors-header);
   color: #fff;
   display: flex;
   align-items: center;
