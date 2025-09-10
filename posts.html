@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Coffee Hub - Fórum</title>
+
+    <link rel="stylesheet" href="css/globals.css">
+    <link rel="stylesheet" href="css/theme.css">
+
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/posts-list.css">
+</head>
+
+<body data-colors-schema="light">
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img class="logo-img" src="img/logocoffe.png" width="150">
+        </div>
+
+        <div class="header-actions">
+            <form class="search-container">
+                <input type="search" placeholder="Pesquisar..." aria-label="Pesquisar">
+                <button type="submit">🔍</button>
+            </form>
+            <button id="change-theme-button">
+                Mudar tema
+            </button>
+            <button class="user-icon">👤</button>
+            <button class="menu-icon" id="menuToggle">☰</button>
+        </div>
+    </header>
+
+  <script>
+    const button = document.getElementById('change-theme-button')
+
+    button.onclick = function () {
+      const body = document.querySelector('body')
+      body.setAttribute('data-colors-schema', body.getAttribute('data-colors-schema') == 'light' ? 'dark' : 'light')
+      console.log(body)
+    }
+  </script>
+
+    <!-- Mais Comentados -->
+    <!-- <nav class="categories">
+    <ul>
+      <li><a href="#" class="active">Java</a></li>
+      <li><a href="#">Cyber Segurança</a></li>
+      <li><a href="#">IA</a></li>
+    </ul>
+  </nav> -->
+
+    <!-- Lista de posts -->
+    <main>
+        <div class="left-column">
+            <nav id="menu">
+                <h2>Categorias</h2>
+
+                <ul>
+                    <a href="/posts.html?category=help">
+                        <ol class="category selected">
+                            🗯️ Relevantes
+                        </ol>
+                    </a>
+
+                    <a href="/posts.html?category=help">
+                        <ol class="category">
+                            📅 Recentes
+                        </ol>
+                    </a>
+
+                    <a href="/posts.html?category=help">
+                        <ol class="category">
+                            📚 Ajuda / Questões
+                        </ol>
+                    </a>
+                </ul>
+
+                <br>
+                <h2>Populares</h2>
+
+                <ul id="most-popular-categories">
+                    <a href="/posts.html?category=help">
+                        <ol class="category">
+                            ☕ Java
+                        </ol>
+                    </a>
+
+                    <a href="/posts.html?category=help">
+                        <ol class="category">
+                            💻 Front-end
+                        </ol>
+                    </a>
+
+                    <a href="/posts.html?category=help">
+                        <ol class="category">
+                            🎲 Banco de dados
+                        </ol>
+                    </a>
+                </ul>
+
+                <a id="create-post" href="/new-content.html">
+                    ➕ Publicar novo conteúdo
+                </a>
+            </nav>
+        </div>
+
+        <div class="content">
+            <section id="posts-list">
+                <!-- <hr /> -->
+                <h2>Publicações</h2>
+                <article>
+                    <div class="header">
+                        <div class="author">
+                            <img src="https://github.com/lorenaduda06.png" alt="Ícone de e-mail" width="16">
+                            <span title="Autor: lorenaduda06"><a
+                                    href="user.html?u=lorenaduda06">u/lorenaduda06</a></span>
+                        </div>
+                        <span>•</span>
+                        <time>1 dia atrás</time>
+                    </div>
+                    <h3><a><span>1.</span> Título do post</a></h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore et quia in recusandae quae
+                        voluptatem
+                        pariatur optio. Suscipit nihil dolorum mollitia laborum veniam, saepe dolor corporis minus alias
+                        vitae quod.
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere accusantium tempora animi,
+                        fugiat totam rem
+                        sequi eaque nam inventore dolores, quasi quo autem. Ipsum incidunt hic aliquid quisquam omnis
+                        quas! Lorem
+                        ipsum dolor sit, amet consectetur adipisicing elit. Libero eum necessitatibus odio illo. Velit,
+                        unde
+                        asperiores voluptatum veritatis quisquam, et cumque natus in voluptate eum quasi nostrum id!
+                        Accusantium,
+                        recusandae!</p>
+                    <ul class="tags">
+                        <li><a>Teste</a></li>
+                        <li><a>Teste</a></li>
+                        <li><a>Testeeeeeeeeeeeee</a></li>
+                    </ul>
+                    <span class="tag"></span>
+                    <div class="info">
+                        <span title="+16 | -0 (100% achou relevante)">16 pontos</span> · 10 comentários · <span
+                            class="solved">Resolvido</span>
+                    </div>
+                </article>
+                <hr />
+
+                <article>
+                    <div class="header">
+                        <div class="author">
+                            <img src="https://github.com/jvopinho.png" alt="Ícone de e-mail" width="16">
+                            <span title="Autor: jvopinho"><a href="user.html?u=jvopinho">u/jvopinho</a></span>
+                        </div>
+                        <span>•</span>
+                        <time>1 dia atrás</time>
+                    </div>
+                    <h3><a><span>2.</span> Título do post</a></h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore et quia in recusandae quae
+                        voluptatem
+                        pariatur optio. Suscipit nihil dolorum mollitia laborum veniam, saepe dolor corporis minus alias
+                        vitae quod.
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere accusantium tempora animi,
+                        fugiat totam rem
+                        sequi eaque nam inventore dolores, quasi quo autem. Ipsum incidunt hic aliquid quisquam omnis
+                        quas! Lorem
+                        ipsum dolor sit, amet consectetur adipisicing elit. Libero eum necessitatibus odio illo. Velit,
+                        unde
+                        asperiores voluptatum veritatis quisquam, et cumque natus in voluptate eum quasi nostrum id!
+                        Accusantium,
+                        recusandae!</p>
+                    <ul class="tags">
+                        <li><a>Teste</a></li>
+                        <li><a>Teste</a></li>
+                        <li><a>Testeeeeeeeeeeeee</a></li>
+                    </ul>
+                    <span class="tag"></span>
+                    <div class="info">
+                        16 pontos · 10 comentários
+                    </div>
+                </article>
+                <hr />
+
+                <article>
+                    <div class="header">
+                        <div class="author">
+                            <img src="https://github.com/LFelipeRamos.png" alt="Ícone de e-mail" width="16">
+                            <span title="Autor: LFelipeRamos"><a
+                                    href="user.html?u=LFelipeRamos">u/LFelipeRamos</a></span>
+                        </div>
+                        <span>•</span>
+                        <time>1 dia atrás</time>
+                    </div>
+                    <h3><a><span>3.</span> Título do post</a></h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore et quia in recusandae quae
+                        voluptatem
+                        pariatur optio. Suscipit nihil dolorum mollitia laborum veniam, saepe dolor corporis minus alias
+                        vitae quod.
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere accusantium tempora animi,
+                        fugiat totam rem
+                        sequi eaque nam inventore dolores, quasi quo autem. Ipsum incidunt hic aliquid quisquam omnis
+                        quas! Lorem
+                        ipsum dolor sit, amet consectetur adipisicing elit. Libero eum necessitatibus odio illo. Velit,
+                        unde
+                        asperiores voluptatum veritatis quisquam, et cumque natus in voluptate eum quasi nostrum id!
+                        Accusantium,
+                        recusandae!</p>
+                    <ul class="tags">
+                        <li><a>Teste</a></li>
+                        <li><a>Teste</a></li>
+                        <li><a>Testeeeeeeeeeeeee</a></li>
+                    </ul>
+                    <span class="tag"></span>
+                    <div class="info">
+                        16 pontos · 10 comentários
+                    </div>
+                </article>
+                <hr />
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <!-- <button class="footer-btn">💬</button>
+    <button class="footer-btn">🔔</button> -->
+    </footer>
+
+    <script>
+        // Toggle menu mobile
+        const menuToggle = document.getElementById("menuToggle");
+
+        menuToggle.addEventListener("click", () => {
+
+            window.location.href = '/login.html'
+        });
+    </script>
+</body>
+
+</html>
