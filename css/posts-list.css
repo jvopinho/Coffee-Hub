@@ -152,6 +152,10 @@ section#posts-list {
   text-decoration: underline;
 }
 
+#posts-list article h3 a {
+  text-decoration: none;
+}
+
 #posts-list article p {
   margin-top: 10px;
   margin-bottom: 10px;
@@ -199,11 +203,11 @@ section#posts-list {
 #posts-list article div.info {
   margin-top: 10px;
   font-size: 0.85rem;
-  color: var(--colors-text-40);
+  color: var(--colors-text-60);
 }
 
 #posts-list article div.info span {
-  color: var(--colors-text-40);
+  color: var(--colors-text-60);
 }
 
 #posts-list article div.info span.solved {

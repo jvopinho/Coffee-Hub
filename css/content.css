@@ -1,0 +1,158 @@
+main {
+    max-width: 1280px;
+    width: 100%;
+    margin: 40px auto;
+    padding: 10px 20px;
+}
+
+main hr {
+    margin: 20px 0;
+}
+
+main h1 {
+    word-break: break-word;
+    font-size: 2em;
+    font-weight: 400;
+}
+
+main h1 span {
+    color: var(--colors-text-40);
+    font-weight: 300;
+}
+
+main article {
+    max-width: 75%;
+    display: flex;
+}
+
+main article img.author-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+main article .content-wrapper {
+    max-width: calc(100% - 45px);
+    margin-left: 15px;
+    width: 100%;
+    border: 1.5px solid var(--colors-ui-20);
+    border-radius: 10px;
+}
+
+main article .content-wrapper .header {
+    display: flex;
+    width: 100%;
+    height: 40px;
+    background-color: var(--colors-ui-5);
+    gap: 10px;
+    padding: 10px 20px;
+    align-items: center;
+    border-bottom: 1.5px solid var(--colors-ui-20);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+main article .content-wrapper .header span,
+main article .content-wrapper .header time {
+    font-size: .95em;
+    color: var(--colors-ui-60);
+}
+
+main article .content-wrapper .header div > span.author-display-name {
+    color: var(--colors-ui-100);
+    font-weight: 500;
+}
+
+main article .content-wrapper .header span.author-username::before {
+    content: '( ';
+}
+
+main article .content-wrapper .header span.author-username::after {
+    content: ' )';
+}
+
+@media screen and (max-width: 600px) {
+    main article .content-wrapper .header {
+        gap: 4px;
+    }
+    
+    main article .content-wrapper .header span,
+    main article .content-wrapper .header span.author-username,
+    main article .content-wrapper .header span.author-display-name,
+    main article .content-wrapper .header time {
+        font-size: 10px;
+        color: var(--colors-ui-60);
+    }
+
+    main article .content-wrapper .header span.author-username {
+        display: none;
+    }
+}
+
+main article button.reaction {
+    width: 60px;
+    height: 26px;
+    background-color: transparent;
+    border: 2px solid var(--colors-ui-40);
+    border-radius: 100px;
+    font-size: 12px;
+    padding: 0 .25rem;
+    box-shadow: none;
+    cursor: pointer;
+    align-items: center;
+}
+
+main article button.reaction.reacted {
+    background-color: var(--colors-blue-10);
+    border: 2px solid var(--colors-blue-60);
+}
+
+main article button.reaction:hover,
+main article button.reaction.reacted:hover {
+    background-color: var(--colors-blue-20);
+}
+
+main article button.reaction span.reactions-count {
+    overflow: hidden;
+    width: 100% !important;
+    text-align: end;
+}
+
+main article button.reaction span.reactions-count,
+main article button.reaction i {
+    color: var(--colors-ui-40);
+    font-size: 13px;
+}
+
+main article .content-wrapper .header button.reaction.up-vote {
+    margin-left: auto;
+}
+
+main article button.reaction.up-vote span.reactions-count,
+main article button.reaction.up-vote i {
+    font-weight: 700;
+}
+
+main article button.reaction.up-vote.reacted span.reactions-count,
+main article button.reaction.up-vote.reacted i {
+    font-size: 13px;
+    color: var(--colors-blue-80);
+    font-weight: 700;
+}
+
+main article .content-wrapper .reactions {
+    display: flex;
+    padding: 5px 20px;
+    margin-bottom: 10px;
+    gap: 10px;
+}
+
+main article .content-wrapper .content {
+    padding: 0 20px 20px 20px;
+    font-size: .95em !important;
+    line-height: 150%;
+}
+
+main article.comment {
+    margin-top: 40px;
+}
