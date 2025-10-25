@@ -17,6 +17,14 @@
     cursor: no-drop;
 }
 
+.button-theme-green {
+    background-color: var(--colors-green-100);
+}
+
+.button-theme-green:disabled {
+    background-color: var(--colors-green-40);
+}
+
 .button-theme-blue {
     background-color: var(--colors-blue-100);
 }

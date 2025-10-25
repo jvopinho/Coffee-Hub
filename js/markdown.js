@@ -36,6 +36,7 @@ export default markdownIt({
     // or '' if the source string is not changed and should be escaped externally.
     // If result starts with <pre... internal wrapper is skipped.
     highlight: function (str, lang) {
+        console.log(str, lang);
         if (lang && hljs.getLanguage(lang)) {
             try {
                 return /* html */`${hljs.highlight(str, { language: lang }).value}`

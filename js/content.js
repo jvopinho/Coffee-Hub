@@ -2,9 +2,20 @@ import md from '/js/markdown.js'
 
 const contentsList = document.getElementById('contents-list')
 
-const response = await fetch('/api/contents/2.json')
+const response = await fetch('/api/contents.json')
 
 const data = await response.json()
+
+const search = new URLSearchParams(window.location.search)
+const slug = search.get('c')
+
+console.log(slug);
+
+// if(!slug) {
+//     window.location.href = '/'
+// }    
+
+createArticle(data.find(content => content.slug == slug), true)
 
 console.log(data);
 
@@ -61,5 +72,3 @@ function createArticle(content, isMain) {
         createArticle(comment,false)
     }
 }
-
-createArticle(data, true)

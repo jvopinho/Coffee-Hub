@@ -1,0 +1,100 @@
+main {
+    display: block;
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+label {
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+input[type="text"] {
+    display: flex;
+    width: 100%;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 16px;
+    /* margin-top: 30px; */
+    padding: 10px 20px;
+    border-radius: 5px;
+    outline: 1px solid var(--colors-ui-40);
+    border: none;
+    background-color: var(--colors-ui-5);
+}
+
+section.editor-container {
+    display: flex;
+    gap: 10px;
+}
+
+#editor-wrapper {
+    overflow: auto;
+    /* overflow-x: hidden; */
+    outline: 1px solid var(--colors-ui-40);
+    flex: 1;
+    resize: vertical;
+    max-width: 100%;
+    min-height: 200px;
+    height: 300px;
+    padding: 10px 20px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    border-radius: 5px;
+    background-color: var(--colors-ui-5);
+    
+}
+
+#editor-input {
+    /* width: 120%; */
+    /* display: flex; */
+    height: 100%;
+    min-height: 100%;
+    resize: none;
+    background-color: none;
+    padding: 10px 0;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: transparent;
+    outline: 1px solid transparent;
+    border: none;
+    font-size: 16px;
+}
+
+#editor-input:focus {
+    border: none;
+}
+
+#editor-wrapper:has(#editor-input:focus), input:focus {
+    outline: 1px solid blue;
+    border: none;
+}
+
+#preview {
+    padding: 20px 20px 30px;
+    resize: none;
+    width: 100%;
+    display: block;
+    z-index: 100;
+    border: 1px solid var(--colors-ui-40);
+    border-radius: 5px;
+    font-family: monospace;
+    font-size: 16px;
+    overflow: auto;
+}
+
+#content-input {
+    background-color: transparent;
+}
+
+.buttons {
+    display: flex;
+    justify-content: right;
+}
