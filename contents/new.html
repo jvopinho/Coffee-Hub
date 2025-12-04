@@ -24,7 +24,7 @@
     <!-- Header -->
     <header>
         <div class="logo">
-            <img class="logo-img" src="../img/logocoffe.png" width="150">
+            <a href="../posts.html"><img class="logo-img" src="../img/logocoffe.png" width="150"></a>
         </div>
 
         <div class="header-actions">
@@ -40,15 +40,7 @@
         </div>
     </header>
 
-    <script>
-        const button = document.getElementById('change-theme-button')
-
-        button.onclick = function () {
-            const body = document.querySelector('body')
-            body.setAttribute('data-colors-schema', body.getAttribute('data-colors-schema') == 'light' ? 'dark' : 'light')
-            console.log(body)
-        }
-    </script>
+    <script src="../js/change-theme.js"></script>
 
     <main>
         <h1>Publicar novo conteúdo</h1>
