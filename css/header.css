@@ -52,6 +52,7 @@ header {
   background: none;
   border: none;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .menu-icon {
@@ -79,4 +80,9 @@ header {
     width: 100%;
     margin: 10px 0;
   }
+}
+
+#change-theme-button {
+  background: none;
+  font-size: 1.5rem;
 }
