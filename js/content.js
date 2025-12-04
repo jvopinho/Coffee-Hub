@@ -11,9 +11,9 @@ const slug = search.get('c')
 
 console.log(slug);
 
-// if(!slug) {
-//     window.location.href = '/'
-// }    
+if(!slug) {
+    window.location.href = '/'
+}    
 
 createArticle(data.find(content => content.slug == slug), true)
 

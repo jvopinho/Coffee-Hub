@@ -1,5 +1,50 @@
 [
     {
+        "id": "1",
+        "slug": "duvidas-sobre-organizacao-de-codigo-em-python",
+        "created_at": "2025-09-11T15:20:30.123Z",
+        "author": {
+            "username": "devuser123"
+        },
+        "tags": [
+            "Python",
+            "Boas Práticas"
+        ],
+        "title": "Dúvidas sobre organização de código em Python",
+        "body": "Estou começando a criar projetos maiores em Python e percebi que meus arquivos estão ficando confusos. Devo separar tudo em módulos? Como saber quando criar uma classe?\n\nSe tiverem dicas de boas práticas ou referências, agradeço!",
+        "boosts": {
+            "count": 5,
+            "reacted": false
+        },
+        "solved": true,
+        "reactions": [
+            {
+                "emoji": "👍",
+                "count": 3,
+                "reacted": false
+            },
+            {
+                "emoji": "💡",
+                "count": 1,
+                "reacted": false
+            }
+        ],
+        "comments": [
+            {
+                "id": "8",
+                "created_at": "2025-09-11T16:00:00.000Z",
+                "author": {
+                    "username": "pythonista"
+                },
+                "body": "Uma boa prática é seguir o princípio da responsabilidade única: cada módulo ou classe deve ter uma única responsabilidade. Isso facilita a manutenção e a leitura do código. Além disso, usar pacotes para agrupar módulos relacionados pode ajudar na organização.",
+                "boosts": {
+                    "count": 2,
+                    "reacted": false
+                }
+            }
+        ]
+    },
+    {
         "id": "2",
         "slug": "tentando-construir-um-pedaco-de-internet-mais-massa",
         "created_at": "2025-09-10T20:43:55.883Z",
@@ -53,5 +98,112 @@
                 }
             }
         ]
+    },
+    {
+        "id": "11",
+        "slug": "diferenca-entre-for-in-e-for-of-no-javascript",
+        "created_at": "2025-09-10T10:15:00.000Z",
+        "author": {
+            "username": "jsnovato"
+        },
+        "tags": [
+            "JavaScript",
+            "Typescript",
+            "Dicas"
+        ],
+        "title": "Diferença entre for...in e for...of no JavaScript",
+        "body": "Muitos iniciantes confundem `for…in` e `for…of`. Apesar de parecidos, eles têm finalidades diferentes:\n- **for…in** → itera sobre chaves (índices ou propriedades),\n- **for…of** → itera sobre valores\n**Exemplo:**\n\n```javascript\nconst arr = ['a', 'b', 'c'];\n\nfor (let index in arr) {\n  console.log(index); // 0, 1, 2\n}\n\nfor (let value of arr) {\n  console.log(value); // 'a', 'b', 'c'\n}\n```\n\nUse **for…in** para objetos e **for…of** para arrays e outros iteráveis.",
+        "boosts": {
+            "count": 10,
+            "reacted": false
+        },
+        "reactions": [
+            {
+                "emoji": "💡",
+                "count": 6,
+                "reacted": true
+            },
+            {
+                "emoji": "📚",
+                "count": 3,
+                "reacted": false
+            }
+        ],
+        "comments": []
+    },
+    {
+        "id": "5",
+        "slug": "como-melhorar-minha-eficiencia-no-trabalho",
+        "created_at": "2025-09-09T18:15:42.567Z",
+        "author": {
+            "username": "produtividadeguru"
+        },
+        "tags": [
+            "Produtividade",
+            "Dicas"
+        ],
+        "title": "Como melhorar minha eficiência no trabalho?",
+        "body": "Sinto que estou sempre correndo contra o tempo e nunca consigo terminar tudo o que preciso fazer. Alguém tem dicas práticas para melhorar a eficiência no trabalho e gerenciar melhor o tempo?",
+        "boosts": {
+            "count": 8,
+            "reacted": false
+        },
+        "reactions": [
+            {
+                "emoji": "⏰",
+                "count": 4,
+                "reacted": false
+            },
+            {
+                "emoji": "💼",
+                "count": 2,
+                "reacted": false
+            }
+        ],
+        "comments": [
+            {
+                "id": "6",
+                "created_at": "2025-09-09T19:00:00.000Z",
+                "author": {
+                    "username": "timewizard"
+                },
+                "body": "Uma técnica que me ajudou bastante foi a Pomodoro. Trabalho por 25 minutos focado e depois faço uma pausa de 5 minutos. Isso ajuda a manter a concentração e evita o cansaço mental.",
+                "boosts": {
+                    "count": 1,
+                    "reacted": false
+                }
+            }
+        ]
+    },
+    {
+        "id": "7",
+        "slug": "ferramentas-essenciais-para-desenvolvedores-web",
+        "created_at": "2025-09-08T14:30:10.789Z",
+        "author": {
+            "username": "webdevmaster"
+        },
+        "tags": [
+            "Desenvolvimento Web",
+            "Ferramentas"
+        ],
+        "title": "Ferramentas essenciais para desenvolvedores web",
+        "body": "Quais são as ferramentas que vocês consideram essenciais para o dia a dia de um desenvolvedor web? Estou buscando otimizar meu fluxo de trabalho e gostaria de saber as recomendações da comunidade.",
+        "boosts": {
+            "count": 12,
+            "reacted": true
+        },
+        "reactions": [
+            {
+                "emoji": "🛠️",
+                "count": 7,
+                "reacted": false
+            },
+            {
+                "emoji": "💻",
+                "count": 5,
+                "reacted": true
+            }
+        ],
+        "comments": []
     }
 ]
