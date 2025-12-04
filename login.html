@@ -16,86 +16,21 @@
     <link rel="stylesheet" href="css/login.css">
 </head>
 <body data-colors-schema="light">
-    <div class="login-wrapper">
+    <main class="login-section">
         <section class="login-container">
             <form onsubmit="return false">
-                <label><span class="required">*</span> Github username:</label>
-                <input type="text" id="username">
-                <span id="error-message"></span>
-                <br>
-                <button class="button button-theme-blue" id="login-button" disabled>Login</button>
-                <a class="button" href="/posts.html">Cancelar</a>
+                <label>E-mail:</label>
+                <input type="text" id="email-input">
+
+                <label>Senha:</label>
+                <input type="password" id="password-input">
+
+                <button class="button button-theme-blue" id="login-button" onclick="signIn()">Login</button>
+                <button class="button button-theme-gray" id="register-button" onclick="goToRegister()">Cadastrar</button>
             </form>
-            
-            <div id="user-avatar">
-                <span id="loading"></span>
-            </div>
         </section>
-    </div>
-    <script>
-        const usernameInput = document.getElementById('username')
-        const loginButton = document.getElementById('login-button')
+    </main>
 
-        const userAvatar = document.getElementById('user-avatar')
-        const loadingSpan = document.getElementById('loading')
-        const errorMessage = document.getElementById('error-message')
-
-        let user;
-
-        function debounce(fn, delay) {
-            let timeoutId;
-            return (...args) => {
-                loginButton.disabled = true
-                userAvatar.setAttribute('style', 'background-image: none')
-                loadingSpan.setAttribute('style', 'display: block;')
-                errorMessage.innerText = ''
-                clearTimeout(timeoutId);
-                timeoutId = setTimeout(() => fn(...args), delay);
-            };
-        }
-
-        function signIn() {
-            console.log('Login ->', user)
-            window.location.href = '/'
-        }
-
-        async function request(username) {
-            loadingSpan.setAttribute('style', 'display: none;')
-            if(!username) {
-                errorMessage.innerText = ''
-
-                return
-            }
-
-            const response = await fetch(`https://api.github.com/users/${username}`)
-            console.log('request - ' + username);
-
-            try {
-                if(response.ok) {
-                    const data = await response.json()
-
-                    loginButton.disabled = false
-                    userAvatar.setAttribute('style', `background-image: url(${data.avatar_url})`)
-                    user = data
-                } else {
-                    userAvatar.setAttribute('style', 'background-image: none;')
-
-                    if(response.status == 404) {
-                        errorMessage.innerText = '* Usuário não encontrado'
-                    }
-                }
-            } catch (error) {
-                window.alert("Erro na requisição")
-                console.error(error)
-            }
-        }
-
-        const debouncedFetch = debounce((e) => request(e.target.value), 1000);
-
-        usernameInput.addEventListener("input", debouncedFetch);
-        loginButton.onclick = function(ev) {
-            signIn()
-        }
-    </script>
+    <script src="js/login.js"></script>
 </body>
 </html>
