@@ -40,15 +40,7 @@
     </div>
   </header>
 
-  <script>
-    const button = document.getElementById('change-theme-button')
-
-    button.onclick = function () {
-      const body = document.querySelector('body')
-      body.setAttribute('data-colors-schema', body.getAttribute('data-colors-schema') == 'light' ? 'dark' : 'light')
-      console.log(body)
-    }
-  </script>
+  <script src="../js/change-theme.js"></script>
 
   <div id="fixed-post-header" style="background-color: red; width: 100%; height: 60px; position: fixed; top: 0;
   left: 0; z-index: 15;" hidden>
