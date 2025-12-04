@@ -4,9 +4,7 @@
         "slug": "tentando-construir-um-pedaco-de-internet-mais-massa",
         "created_at": "2025-09-10T20:43:55.883Z",
         "author": {
-            "username": "jvopinho",
-            "display_name": "João Pinho",
-            "avatar_url": "https://github.com/jvopinho.png"
+            "username": "jvopinho"
         },
         "tags": [
             "Coffee Hub"
@@ -34,11 +32,21 @@
                 "id": "3",
                 "created_at": "2025-09-10T22:43:55.883Z",
                 "author": {
-                    "username": "victorpantarotti",
-                    "display_name": "Victor Pantarotti",
-                    "avatar_url": "https://github.com/victorpantarotti.png"
+                    "username": "victorpantarotti"
                 },
-                "body": "Valeu!",
+                "body": "Que ideia fantástica! Deu gosto de ler tudo do início ao fim. Espero que esse projeto cresça muito e tenha a efetividade maior do que o esperado. Acho muito massa essa iniciativa da comunidade para a comunidade, se parece com a ideia do DEV Community.",
+                "boosts": {
+                    "count": 0,
+                    "reacted": false
+                }
+            },
+            {
+                "id": "4",
+                "created_at": "2025-09-10T22:43:55.883Z",
+                "author": {
+                    "username": "ryanhrc"
+                },
+                "body": "So pela apresentação ja da pra ter uma ideia que sera muito massa ter um pedaço de internet mais massa. Fico agradecido pela criação e com certeza ajudará muitos",
                 "boosts": {
                     "count": 0,
                     "reacted": false
