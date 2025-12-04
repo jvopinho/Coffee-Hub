@@ -6,17 +6,54 @@
 
     <link rel="stylesheet" href="/css/theme.css">
     <link rel="stylesheet" href="/css/globals.css">
+    <link rel="stylesheet" href="/css/button.css">
+
     <link rel="stylesheet" href="/css/admin.css">
 
     <title>Document</title>
 </head>
-<body>
+<body data-colors-schema="light">
     <main>
-        <h1>Admin</h1>
+        <h1>Painel de Administrador</h1>
 
         <section>
             <h2>Cadastro de novo usuário</h2>
+
+            <form>
+                <label for="username-input">Nome de usuário</label>
+                <input type="text" id="username-input" name="username">
+
+                <label for="email-input">E-mail</label>
+                <input type="email" id="email-input" name="email">
+
+                <label for="password-input">Senha</label>
+                <input type="password" id="password-input" name="password">
+
+                <hr>
+                <button class="button button-theme-blue" id="create-user-button" onclick="createUser()">Criar usuário</button>
+                <button class="button button-theme-grey" id="create-user-clear-form-button" onclick="clearCreateUserForm()">Limpar</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Lista de usuários</h2>
+
+            <table id="users-list">
+                <thead>
+                    <tr>
+                        <th>Nome de usuário</th>
+                        <th>E-mail</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody id="users-list-body">
+                </tbody>
+            </table>
+
+            <button class="button button-theme-red" style="float: right;" onclick="deleteAllUsers()">Excluir todos</button>
         </section>
     </main>
+
+    <script src="/js/admin.js"></script>
 </body>
 </html>

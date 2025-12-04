@@ -1,4 +1,4 @@
-body[data-colors-schema="light"] {
+body {
   --colors-background: #ffffff;
   --colors-header: #25292e;
   --colors-overlay: #000000E6;

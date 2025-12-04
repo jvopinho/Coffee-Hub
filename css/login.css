@@ -1,113 +1,46 @@
-.login-wrapper {
-    width: 100%;
-    height: 100vh;
+main.login-section {
+    display: flex;
     justify-content: center;
     align-items: center;
-    display: flex;
+    height: 80vh;
 }
 
-.login-container {
-    width: 500px;
-    height: 200px;
-    border-width: 10px;
-    border-style: solid;
-    border: 2px solid var(--colors-ui-20);
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
+section.login-container {
+    width: 400px;
+    border: 1px solid var(--colors-ui-40);
     padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: var(--colors-flow-100);
 }
 
-.login-container div#user-avatar {
-    width: 160px;
-    height: 160px;
-    background-size: 160px 160px;
-    align-self: center;
-    margin-left: auto;
-    border: 2px solid var(--colors-ui-20);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.login-container div#user-avatar span#loading {
-    height: .85em;
-    width: .85em;
-    border-radius:100%;
-    background:var(--colors-band-100);
-    display:none;
-    animation: spin 2s ease infinite;
-    rotate: 180deg;
-}
-
-.login-container div#user-avatar span#loading:before,
-.login-container div#user-avatar span#loading:after {
-    content:'';
-    display:block;
-    position:absolute;
-    height:inherit;
-    width:inherit;
-    background:inherit;
-    border-radius:inherit;
-    animation:spin 2s ease infinite;
-}
-
-.login-container div#user-avatar span#loading:before {
-    left: calc(.85em * -1.15);
-}
-
-.login-container div#user-avatar span#loading:after {
-    left: calc(.85em * 1.15);
-}
-
-.login-container form button {
-    margin-top: 15px;
-}
-
-.login-container form label {
+label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
     font-weight: 500;
 }
 
-.login-container form label span.required {
-    font-weight: 700;
-    color: var(--colors-red-100);
-}
-
-.login-container form span#error-message {
-    font-size: .8em;
-    font-style: italic;
-    color: var(--colors-red-100);
-}
-
-.login-container form input#username {
-    width: 270px;
-    height: 40px;
+input[type="text"],
+input[type="password"] {
     display: flex;
-    background-color: transparent;
-    border: 2px solid var(--colors-ui-20);
-    border-radius: 6px;
-    padding: 10px;
+    width: 100%;
+    height: 40px;
     font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    outline: 1px solid var(--colors-ui-40);
+    border: none;
+    background-color: var(--colors-ui-5);
 }
 
-@keyframes spin{
-  0%{
-    bottom:0;
-    transform:rotate(0deg);
-  }
+input:focus {
+    outline: 1px solid var(--colors-blue-100);
+    border: none;
+}
 
-  30% {
-    margin-top: 10px;
-  }
-  
-  50%{
-    bottom: calc(.4em*2);
-    transform:rotate(-180deg);
-  }
-
-  100%{
-    bottom:0;
-    transform:rotate(-360deg);
-  }
+button {
+    margin-top: 20px !important;
+    width: 100%;
 }
