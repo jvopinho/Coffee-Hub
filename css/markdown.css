@@ -2,6 +2,44 @@
   margin-top: 15px;
 }
 
+.markdown p {
+    font-size: 16px;
+}
+
+.markdown a {
+    color: var(--colors-blue-100);
+}
+
+.markdown h1,
+.markdown h2,
+.markdown h3,
+.markdown h4,
+.markdown h5 {
+    font-weight: 600;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.markdown h1 {
+    font-size: 32px;
+}
+
+.markdown h2 {
+    font-size: 28px;
+}
+
+.markdown h3 {
+    font-size: 24px;
+}
+
+.markdown h4 {
+    font-size: 20px;
+}
+
+.markdown h5 {
+    font-size: 18px;
+}
+
 .markdown code {
     padding: 1.5px 5px;
     font-weight: "400";

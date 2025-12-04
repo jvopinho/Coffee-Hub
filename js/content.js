@@ -32,38 +32,29 @@ function createArticle(content, isMain) {
     }
 
     child.innerHTML = /*html*/`
-        <img class="author-avatar" src="${content.author.avatar_url}" alt="foto de perfil de João Pinho">
-
-        <div class="content-wrapper">
-            <div class="header" id="main-post-header">
-            <div><span class="author-display-name">${content.author.display_name}</span> <span class="author-username">@${content.author.username}</span></div>
+        <div class="header" id="main-post-header">
+            <span class="author-username">u/${content.author.username}</span>
             <span>•</span>
             <span><time datetime="2025-09-10 16:02">1 dia atrás</time></span>
+        </div>
 
-            <!-- <button class="reaction up-vote reacted">
+        <div class="content markdown">
+            ${contentInMarkdown}
+        </div>
+
+        <div class="reactions">
+            <button class="reaction up-vote ${content.boosts.reacted ? "reacted" : ""}">
                 <i class="fas fa-arrow-up"></i>
-                <span class="reactions-count">16</span>
-            </button> -->
-            </div>
+                <span class="reactions-count">${content.boosts.count}</span>
+            </button>
 
-            <div class="content markdown">
-                ${contentInMarkdown}
-            </div>
-
-            <div class="reactions">
-                <button class="reaction up-vote ${content.boosts.reacted ? "reacted" : ""}">
-                    <i class="fas fa-arrow-up"></i>
-                    <span class="reactions-count">${content.boosts.count}</span>
+            ${(content.reactions ?? []).sort((a, b) => b.count - a.count).map(reaction => /*html*/`
+                <button class="reaction ${reaction.reacted ? "reacted" : ""}">
+                    <span>${reaction.emoji}</span>
+                    <span class="reactions-count">${reaction.count}</span>
                 </button>
-
-                ${(content.reactions ?? []).sort((a, b) => b.count - a.count).map(reaction => /*html*/`
-                    <button class="reaction ${reaction.reacted ? "reacted" : ""}">
-                        <span>${reaction.emoji}</span>
-                        <span class="reactions-count">${reaction.count}</span>
-                    </button>
-                `).join('\n')}
-            </div>
-        </div>  
+            `).join('\n')}
+        </div>
     `
 
     contentsList.appendChild(child)
