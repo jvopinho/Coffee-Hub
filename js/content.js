@@ -29,6 +29,8 @@ function createArticle(content, isMain) {
 
     if(!isMain) {
         child.classList.add('comment')
+    } else {
+        document.getElementById('content-title').innerHTML = `${content.title} <span>#${content.id.toString().padStart(3, '0')}</span>`
     }
 
     child.innerHTML = /*html*/`
